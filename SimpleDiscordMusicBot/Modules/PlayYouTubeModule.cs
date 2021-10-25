@@ -14,6 +14,13 @@ namespace MusicBot.Modules
             _service = service;
         }
 
+        [Command("help",RunMode = RunMode.Async)]
+        [Alias("h")]
+
+        public async Task HelpAsync()
+        {
+           await Context.Channel.SendMessageAsync("Commands:\nPlay(p) *url* - Plays audio from youtube video.\nSearch(src) *Search Query* - Search videos on youtube by query.\nStop - Disconnect music bot.\nNow/Next - Displays Current/Next song in queue.");
+        }
 
         [Command("play",RunMode = RunMode.Async)]
         [Alias("p")]
