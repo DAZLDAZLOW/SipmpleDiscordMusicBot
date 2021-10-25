@@ -1,4 +1,4 @@
 Discord music bot by DAZL.
-To start you need unrar ffmpeg.rar and create appsettings.json to application directory.
+This is simple ONE SERVER disocrd music bot which can play music from Youtube.
+To start you need unrar ffmpeg.rar into application directory and create here appsettings.json.
 
-This is my first discord bot and github projectю I'm sure it contains a lot of bugs and flaws.
