@@ -19,7 +19,7 @@ namespace MusicBot.Modules
 
         public async Task HelpAsync()
         {
-           await Context.Channel.SendMessageAsync("Commands:\nPlay(p) *url* - Plays audio from youtube video.\nSearch(src) *Search Query* - Search videos on youtube by query.\nStop - Disconnect music bot.\nNow/Next - Displays Current/Next song in queue.");
+           await Context.Channel.SendMessageAsync("Commands:\nPlay(p) *url* - Plays audio from youtube video.\nSearch(src) *Search Query* - Search videos on youtube by query\nSkip - Skips curret song\nStop - Disconnect music bot.\nNow/Next - Displays Current/Next song in queue.");
         }
 
         [Command("play",RunMode = RunMode.Async)]
