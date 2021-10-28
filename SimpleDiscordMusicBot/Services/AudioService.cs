@@ -119,7 +119,7 @@ namespace MusicBot.Services
             //End Embed Build
             int timer = 0;
             while (!ChoosenSwitch && ++timer < SecondsToChoose) Thread.Sleep(1000);
-            if (ChoosenSwitch && ChoosenNumber > 0) await DownloadAndPlayAsync(searchResult[ChoosenNumber - 1].Url, target);
+            if (ChoosenSwitch && ChoosenNumber > 0) await PlayYoutubeAsync(searchResult[ChoosenNumber - 1].Url, target,channel);
             else await channel.SendMessageAsync(":x: Search Time is Out!");
         }
 
